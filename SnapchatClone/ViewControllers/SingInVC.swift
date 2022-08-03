@@ -63,6 +63,25 @@ class SingInVC: UIViewController {
 
     @objc func singInClick(){
         
+        if emailTextField.text != "" && usernameTextField.text != "" && passwordTextField.text != "" {
+            
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { result, error in
+                
+                if error != nil{
+                    
+                    self.alert(alertTitle: "Error!", alertMessage: error?.localizedDescription ?? "Error!")
+                    
+                }else{
+                    
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                    
+                }
+            }
+        }else{
+            
+            self.alert(alertTitle: "Error!", alertMessage: "Email, Username or Passwort not nil!")
+            
+        }
     }
     
     @objc func singUpClick(){

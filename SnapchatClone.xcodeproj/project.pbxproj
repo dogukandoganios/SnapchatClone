@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63094C5E289A41E700FA786B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63094C5D289A41E700FA786B /* UserSingleton.swift */; };
+		63094C60289A560A00FA786B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63094C5F289A560A00FA786B /* CustomTableViewCell.swift */; };
+		63094C62289A6D6300FA786B /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63094C61289A6D6300FA786B /* Snap.swift */; };
 		6368ED8228990F270096FB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368ED8128990F270096FB3D /* AppDelegate.swift */; };
 		6368ED8428990F270096FB3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368ED8328990F270096FB3D /* SceneDelegate.swift */; };
 		6368ED8628990F270096FB3D /* SingInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6368ED8528990F270096FB3D /* SingInVC.swift */; };
@@ -47,6 +50,9 @@
 		2DF1269B215054A792481AF3 /* Pods-SnapchatClone-SnapchatCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapchatClone-SnapchatCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-SnapchatClone-SnapchatCloneUITests/Pods-SnapchatClone-SnapchatCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C939F9BE599AA78681A329E /* Pods_SnapchatCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61123E235F5C525E54BA6E99 /* Pods_SnapchatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63094C5D289A41E700FA786B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		63094C5F289A560A00FA786B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		63094C61289A6D6300FA786B /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		6368ED7E28990F270096FB3D /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6368ED8128990F270096FB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6368ED8328990F270096FB3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63094C5C289A41C000FA786B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63094C5D289A41E700FA786B /* UserSingleton.swift */,
+				63094C61289A6D6300FA786B /* Snap.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6368ED7528990F270096FB3D = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 		6368ED8028990F270096FB3D /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				63094C5C289A41C000FA786B /* Model */,
 				638E2275289939AC00D4FC40 /* Delegate */,
 				638E22742899398800D4FC40 /* ViewControllers */,
 				6368ED8728990F270096FB3D /* Main.storyboard */,
@@ -159,6 +175,7 @@
 			children = (
 				6368ED8528990F270096FB3D /* SingInVC.swift */,
 				638E226E2899395E00D4FC40 /* FeedVC.swift */,
+				63094C5F289A560A00FA786B /* CustomTableViewCell.swift */,
 				638E22702899397000D4FC40 /* UploadVC.swift */,
 				638E22722899398200D4FC40 /* SettingsVC.swift */,
 				638E22762899558200D4FC40 /* SnapVC.swift */,
@@ -438,6 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63094C60289A560A00FA786B /* CustomTableViewCell.swift in Sources */,
+				63094C62289A6D6300FA786B /* Snap.swift in Sources */,
+				63094C5E289A41E700FA786B /* UserSingleton.swift in Sources */,
 				638E226F2899395E00D4FC40 /* FeedVC.swift in Sources */,
 				6368ED8628990F270096FB3D /* SingInVC.swift in Sources */,
 				6368ED8228990F270096FB3D /* AppDelegate.swift in Sources */,

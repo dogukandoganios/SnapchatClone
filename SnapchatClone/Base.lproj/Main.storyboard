@@ -88,6 +88,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle" catalog="system" id="Gen-CJ-kW2"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSingInVC" modalPresentationStyle="fullScreen" id="KjW-gO-dXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iud-jj-LrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +99,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="KFL-cI-6Nb">
             <objects>
-                <tabBarController id="2gD-eJ-4tL" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="2gD-eJ-4tL" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M9Z-zA-M97">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
